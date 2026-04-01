@@ -188,25 +188,20 @@ class PlatformSwitch extends PlatformWidgetBase<CupertinoSwitch, Switch> {
       key: data?.widgetKey ?? widgetKey,
       value: data?.value ?? value,
       onChanged: data?.onChanged ?? onChanged,
-      activeColor: data?.activeColor ?? activeColor,
+      activeThumbColor: data?.activeColor ?? activeColor,
       activeThumbImage: data?.activeThumbImage ?? activeThumbImage,
       activeTrackColor: data?.activeTrackColor ?? activeTrackColor,
       inactiveThumbColor: data?.inactiveThumbColor ?? inactiveThumbColor,
       inactiveThumbImage: data?.inactiveThumbImage ?? inactiveThumbImage,
       inactiveTrackColor: data?.inactiveTrackColor ?? inactiveTrackColor,
       materialTapTargetSize: data?.materialTapTargetSize,
-      dragStartBehavior:
-          data?.dragStartBehavior ??
-          dragStartBehavior ??
-          DragStartBehavior.start,
+      dragStartBehavior: data?.dragStartBehavior ?? dragStartBehavior ?? DragStartBehavior.start,
       autofocus: data?.autofocus ?? autofocus ?? false,
       focusColor: data?.focusColor,
       focusNode: data?.focusNode ?? focusNode,
       hoverColor: data?.hoverColor,
-      onActiveThumbImageError:
-          data?.onActiveThumbImageError ?? onActiveThumbImageError,
-      onInactiveThumbImageError:
-          data?.onInactiveThumbImageError ?? onInactiveThumbImageError,
+      onActiveThumbImageError: data?.onActiveThumbImageError ?? onActiveThumbImageError,
+      onInactiveThumbImageError: data?.onInactiveThumbImageError ?? onInactiveThumbImageError,
       mouseCursor: data?.mouseCursor,
       overlayColor: data?.overlayColor,
       splashRadius: data?.splashRadius,
@@ -228,10 +223,7 @@ class PlatformSwitch extends PlatformWidgetBase<CupertinoSwitch, Switch> {
       key: data?.widgetKey ?? widgetKey,
       value: data?.value ?? value,
       onChanged: data?.onChanged ?? onChanged,
-      dragStartBehavior:
-          data?.dragStartBehavior ??
-          dragStartBehavior ??
-          DragStartBehavior.start,
+      dragStartBehavior: data?.dragStartBehavior ?? dragStartBehavior ?? DragStartBehavior.start,
       thumbColor: data?.thumbColor,
       applyTheme: data?.applyTheme,
       focusColor: data?.focusColor,
@@ -246,10 +238,8 @@ class PlatformSwitch extends PlatformWidgetBase<CupertinoSwitch, Switch> {
       inactiveThumbImage: data?.inactiveThumbImage ?? inactiveThumbImage,
       inactiveTrackColor: data?.inactiveTrackColor ?? inactiveTrackColor,
       mouseCursor: data?.mouseCursor,
-      onActiveThumbImageError:
-          data?.onActiveThumbImageError ?? onActiveThumbImageError,
-      onInactiveThumbImageError:
-          data?.onInactiveThumbImageError ?? onInactiveThumbImageError,
+      onActiveThumbImageError: data?.onActiveThumbImageError ?? onActiveThumbImageError,
+      onInactiveThumbImageError: data?.onInactiveThumbImageError ?? onInactiveThumbImageError,
       thumbIcon: data?.thumbIcon ?? thumbIcon,
       trackOutlineColor: data?.trackOutlineColor ?? trackOutlineColor,
       trackOutlineWidth: data?.trackOutlineWidth ?? trackOutlineWidth,

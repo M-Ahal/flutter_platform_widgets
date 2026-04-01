@@ -6,14 +6,11 @@
 
 import 'package:flutter/cupertino.dart'
     show CupertinoButton, CupertinoColors, CupertinoTheme, CupertinoButtonSize;
-import 'package:flutter/material.dart'
-    show TextButton, ButtonStyle, IconAlignment;
+import 'package:flutter/material.dart' show TextButton, ButtonStyle, IconAlignment;
 import 'package:flutter/widgets.dart';
 
 import 'platform.dart';
 import 'widget_base.dart';
-
-const _kMinInteractiveDimensionCupertino = 44.0;
 
 abstract class _BaseData {
   const _BaseData({this.widgetKey, this.child, this.onPressed});
@@ -63,11 +60,6 @@ class CupertinoTextButtonData extends _BaseData {
     this.padding,
     this.disabledColor,
     this.borderRadius,
-    @Deprecated(
-      'Use minimumSize instead. '
-      'This feature was deprecated after v3.28.0-3.0.pre.',
-    )
-    this.minSize,
     this.pressedOpacity,
     this.alignment,
     this.originalStyle = false,
@@ -85,7 +77,6 @@ class CupertinoTextButtonData extends _BaseData {
   final EdgeInsetsGeometry? padding;
   final Color? disabledColor;
   final BorderRadius? borderRadius;
-  final double? minSize;
   final double? pressedOpacity;
   final AlignmentGeometry? alignment;
   final bool? autofocus;
@@ -144,11 +135,7 @@ class PlatformTextButton extends PlatformWidgetBase<Widget, TextButton> {
         focusNode: data?.focusNode,
         style:
             data?.style ??
-            TextButton.styleFrom(
-              backgroundColor: color,
-              padding: padding,
-              alignment: alignment,
-            ),
+            TextButton.styleFrom(backgroundColor: color, padding: padding, alignment: alignment),
         onHover: data?.onHover,
         onFocusChange: data?.onFocusChange,
         statesController: data?.statesController,
@@ -166,11 +153,7 @@ class PlatformTextButton extends PlatformWidgetBase<Widget, TextButton> {
       focusNode: data?.focusNode,
       style:
           data?.style ??
-          TextButton.styleFrom(
-            backgroundColor: color,
-            padding: padding,
-            alignment: alignment,
-          ),
+          TextButton.styleFrom(backgroundColor: color, padding: padding, alignment: alignment),
       onHover: data?.onHover,
       onFocusChange: data?.onFocusChange,
       statesController: data?.statesController,
@@ -187,14 +170,10 @@ class PlatformTextButton extends PlatformWidgetBase<Widget, TextButton> {
         key: data?.widgetKey ?? widgetKey,
         child: data?.child ?? child!,
         onPressed: data?.onPressed ?? onPressed,
-        borderRadius:
-            data?.borderRadius ??
-            const BorderRadius.all(const Radius.circular(8.0)),
-        minSize: data?.minSize ?? _kMinInteractiveDimensionCupertino,
+        borderRadius: data?.borderRadius ?? const BorderRadius.all(const Radius.circular(8.0)),
         padding: data?.padding ?? padding,
         pressedOpacity: data?.pressedOpacity ?? 0.4,
-        disabledColor:
-            data?.disabledColor ?? CupertinoColors.quaternarySystemFill,
+        disabledColor: data?.disabledColor ?? CupertinoColors.quaternarySystemFill,
         alignment: data?.alignment ?? alignment ?? Alignment.center,
         autofocus: data?.autofocus ?? false,
         focusColor: data?.focusColor,
@@ -219,14 +198,10 @@ class PlatformTextButton extends PlatformWidgetBase<Widget, TextButton> {
         key: data?.widgetKey ?? widgetKey,
         child: data?.child ?? child!,
         onPressed: data?.onPressed ?? onPressed,
-        borderRadius:
-            data?.borderRadius ??
-            const BorderRadius.all(const Radius.circular(8.0)),
-        minSize: data?.minSize ?? _kMinInteractiveDimensionCupertino,
+        borderRadius: data?.borderRadius ?? const BorderRadius.all(const Radius.circular(8.0)),
         padding: data?.padding ?? padding,
         pressedOpacity: data?.pressedOpacity ?? 0.4,
-        disabledColor:
-            data?.disabledColor ?? CupertinoColors.quaternarySystemFill,
+        disabledColor: data?.disabledColor ?? CupertinoColors.quaternarySystemFill,
         alignment: data?.alignment ?? alignment ?? Alignment.center,
         color: data?.color ?? color,
         autofocus: data?.autofocus ?? false,

@@ -5,21 +5,14 @@
  */
 
 import 'package:flutter/cupertino.dart'
-    show
-        CupertinoButton,
-        CupertinoButtonSize,
-        CupertinoColors,
-        CupertinoNavigationBar;
-import 'package:flutter/material.dart'
-    show IconButton, VisualDensity, ButtonStyle;
+    show CupertinoButton, CupertinoButtonSize, CupertinoColors, CupertinoNavigationBar;
+import 'package:flutter/material.dart' show IconButton, VisualDensity, ButtonStyle;
 import 'package:flutter/widgets.dart';
 import 'package:flutter_platform_widgets/src/parent_widget_finder.dart';
 
 import 'platform.dart';
 import 'platform_provider.dart';
 import 'widget_base.dart';
-
-const _kMinInteractiveDimensionCupertino = 44.0;
 
 abstract class _BaseData {
   const _BaseData({
@@ -204,15 +197,9 @@ class PlatformIconButton extends PlatformWidgetBase<CupertinoButton, Widget> {
 
     // If the IconButton is placed inside the AppBar, we need to have zero padding.
     final haveZeroPadding =
-        PlatformProvider.of(
-          context,
-        )?.settings.iosUseZeroPaddingForAppbarPlatformIcon ??
-        false;
-    final isPlacedOnPlatformAppBar =
-        ParentWidgetFinder.of<CupertinoNavigationBar>(context) != null;
-    final overriddenPadding = haveZeroPadding && isPlacedOnPlatformAppBar
-        ? EdgeInsets.zero
-        : null;
+        PlatformProvider.of(context)?.settings.iosUseZeroPaddingForAppbarPlatformIcon ?? false;
+    final isPlacedOnPlatformAppBar = ParentWidgetFinder.of<CupertinoNavigationBar>(context) != null;
+    final overriddenPadding = haveZeroPadding && isPlacedOnPlatformAppBar ? EdgeInsets.zero : null;
 
     final givenPadding = data?.padding ?? padding ?? overriddenPadding;
 
@@ -222,15 +209,9 @@ class PlatformIconButton extends PlatformWidgetBase<CupertinoButton, Widget> {
       onPressed: data?.onPressed ?? onPressed,
       padding: givenPadding,
       color: data?.color ?? color,
-      borderRadius:
-          data?.borderRadius ??
-          const BorderRadius.all(const Radius.circular(8.0)),
-      minSize: data?.minSize ?? _kMinInteractiveDimensionCupertino,
+      borderRadius: data?.borderRadius ?? const BorderRadius.all(const Radius.circular(8.0)),
       pressedOpacity: data?.pressedOpacity ?? 0.4,
-      disabledColor:
-          data?.disabledColor ??
-          disabledColor ??
-          CupertinoColors.quaternarySystemFill,
+      disabledColor: data?.disabledColor ?? disabledColor ?? CupertinoColors.quaternarySystemFill,
       alignment: data?.alignment ?? Alignment.center,
       autofocus: data?.autofocus ?? false,
       focusColor: data?.focusColor,
