@@ -1,19 +1,19 @@
 import 'dart:ui' as ui show BoxHeightStyle, BoxWidthStyle;
 
-import 'package:flutter/cupertino.dart'
+import 'package:cupertino_ui/cupertino_ui.dart'
     show
         CupertinoAdaptiveTextSelectionToolbar,
         CupertinoColors,
         CupertinoTextFormFieldRow;
 import 'package:flutter/gestures.dart';
-import 'package:flutter/material.dart'
+import 'package:flutter/services.dart';
+import 'package:flutter/widgets.dart';
+import 'package:material_ui/material_ui.dart'
     show
         AdaptiveTextSelectionToolbar,
         InputCounterWidgetBuilder,
         InputDecoration,
         TextFormField;
-import 'package:flutter/services.dart';
-import 'package:flutter/widgets.dart';
 
 import 'platform.dart';
 import 'widget_base.dart';

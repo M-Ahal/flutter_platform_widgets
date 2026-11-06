@@ -4,10 +4,10 @@
  * See LICENSE for distribution and usage details.
  */
 
-import 'package:flutter/cupertino.dart' show CupertinoPage;
-import 'package:flutter/material.dart' show MaterialPage;
+import 'package:cupertino_ui/cupertino_ui.dart' show CupertinoPage;
 import 'package:flutter/widgets.dart'
     show BuildContext, LocalKey, Page, PopInvokedWithResultCallback, Widget;
+import 'package:material_ui/material_ui.dart' show MaterialPage;
 
 import 'platform.dart';
 import 'widget_base.dart';

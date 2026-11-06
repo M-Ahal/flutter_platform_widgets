@@ -4,16 +4,16 @@
  * See LICENSE for distribution and usage details.
  */
 
-import 'package:flutter/cupertino.dart'
+import 'package:cupertino_ui/cupertino_ui.dart'
     show
-        CupertinoSearchTextField,
         CupertinoColors,
-        OverlayVisibilityMode,
-        CupertinoIcons;
-import 'package:flutter/material.dart'
-    show AdaptiveTextSelectionToolbar, SearchBar;
+        CupertinoIcons,
+        CupertinoSearchTextField,
+        OverlayVisibilityMode;
 import 'package:flutter/services.dart' show TextCapitalization, TextInputAction;
 import 'package:flutter/widgets.dart';
+import 'package:material_ui/material_ui.dart'
+    show AdaptiveTextSelectionToolbar, SearchBar;
 
 import 'platform.dart';
 import 'widget_base.dart';

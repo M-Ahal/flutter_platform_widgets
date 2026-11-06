@@ -4,18 +4,16 @@
  * See LICENSE for distribution and usage details.
  */
 
-import 'package:flutter/cupertino.dart' show CupertinoDialogAction;
-import 'package:flutter/material.dart'
+import 'package:cupertino_ui/cupertino_ui.dart' show CupertinoDialogAction;
+import 'package:flutter/widgets.dart';
+import 'package:material_ui/material_ui.dart'
     show
-        Brightness,
         ButtonStyle,
         ButtonTextTheme,
+        IconAlignment,
         MaterialTapTargetSize,
         TextButton,
-        WidgetStatesController,
-        VisualDensity,
-        IconAlignment;
-import 'package:flutter/widgets.dart';
+        VisualDensity;
 
 import 'platform.dart';
 import 'widget_base.dart';

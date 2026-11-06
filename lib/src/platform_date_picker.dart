@@ -1,19 +1,18 @@
-import 'package:flutter/cupertino.dart'
+import 'package:cupertino_ui/cupertino_ui.dart'
     show
         CupertinoDatePicker,
         CupertinoDatePickerMode,
         DatePickerDateOrder,
         SelectionOverlayBuilder;
-import 'package:flutter/material.dart'
+import 'package:flutter/widgets.dart';
+import 'package:material_ui/material_ui.dart'
     show
-        Theme,
-        showDatePicker,
-        SelectableDayPredicate,
+        CalendarDelegate,
         DatePickerEntryMode,
         DatePickerMode,
-        CalendarDelegate,
-        GregorianCalendarDelegate;
-import 'package:flutter/widgets.dart';
+        GregorianCalendarDelegate,
+        Theme,
+        showDatePicker;
 
 import 'platform.dart';
 import 'platform_text_button.dart';

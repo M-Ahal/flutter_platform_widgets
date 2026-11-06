@@ -4,10 +4,10 @@
  * See LICENSE for distribution and usage details.
  */
 
-import 'package:flutter/cupertino.dart' show CupertinoCheckbox;
-import 'package:flutter/material.dart'
-    show Checkbox, MaterialTapTargetSize, VisualDensity;
+import 'package:cupertino_ui/cupertino_ui.dart' show CupertinoCheckbox;
 import 'package:flutter/widgets.dart';
+import 'package:material_ui/material_ui.dart'
+    show Checkbox, MaterialTapTargetSize, VisualDensity;
 
 import 'platform.dart';
 import 'widget_base.dart';

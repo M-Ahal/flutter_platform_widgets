@@ -4,10 +4,10 @@
  * See LICENSE for distribution and usage details.
  */
 
-import 'package:flutter/cupertino.dart' show CupertinoListTile;
-import 'package:flutter/material.dart'
-    show ListTile, ListTileStyle, ListTileTitleAlignment, VisualDensity;
+import 'package:cupertino_ui/cupertino_ui.dart' show CupertinoListTile;
 import 'package:flutter/widgets.dart';
+import 'package:material_ui/material_ui.dart'
+    show ListTile, ListTileStyle, ListTileTitleAlignment, VisualDensity;
 import 'platform.dart';
 import 'widget_base.dart';
 

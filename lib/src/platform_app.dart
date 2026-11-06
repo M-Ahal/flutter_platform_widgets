@@ -4,8 +4,10 @@
  * See LICENSE for distribution and usage details.
  */
 
-import 'package:flutter/cupertino.dart' show CupertinoApp, CupertinoThemeData;
-import 'package:flutter/material.dart'
+import 'package:cupertino_ui/cupertino_ui.dart'
+    show CupertinoApp, CupertinoThemeData;
+import 'package:flutter/widgets.dart';
+import 'package:material_ui/material_ui.dart'
     show
         MaterialApp,
         ScaffoldMessengerState,
@@ -13,7 +15,6 @@ import 'package:flutter/material.dart'
         ThemeData,
         ThemeMode,
         kThemeAnimationDuration;
-import 'package:flutter/widgets.dart';
 
 import 'platform.dart';
 import 'platform_theme.dart';

@@ -5,14 +5,16 @@ homepage: https://github.com/stryder-dev/flutter_platform_widgets
 documentation: https://github.com/stryder-dev/flutter_platform_widgets/wiki
 
 environment:
-  sdk: ">=3.8.0-0 <4.0.0"
-  flutter: ">=3.32.0"
+  sdk: ">=3.13.0 <4.0.0"
+  flutter: ">=3.47.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
   cupertino_icons: ^1.0.8
+  material_ui: ^1.10.0
+  cupertino_ui: ^1.1.6
 
 dev_dependencies:
   flutter_test:

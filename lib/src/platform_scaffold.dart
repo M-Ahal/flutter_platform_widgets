@@ -4,7 +4,7 @@
  * See LICENSE for distribution and usage details.
  */
 
-import 'package:flutter/cupertino.dart'
+import 'package:cupertino_ui/cupertino_ui.dart'
     show
         CupertinoPageScaffold,
         CupertinoTabBar,
@@ -12,14 +12,14 @@ import 'package:flutter/cupertino.dart'
         CupertinoTabScaffold,
         ObstructingPreferredSizeWidget;
 import 'package:flutter/gestures.dart';
-import 'package:flutter/material.dart'
+import 'package:flutter/widgets.dart';
+import 'package:material_ui/material_ui.dart'
     show
         DrawerCallback,
         FloatingActionButtonAnimator,
         FloatingActionButtonLocation,
         Material,
         Scaffold;
-import 'package:flutter/widgets.dart';
 
 import 'extensions.dart';
 import 'platform.dart';

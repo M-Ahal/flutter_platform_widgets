@@ -4,10 +4,10 @@
  * See LICENSE for distribution and usage details.
  */
 
-import 'package:flutter/cupertino.dart' show CupertinoNavigationBar;
-import 'package:flutter/material.dart' show AppBar, Brightness;
+import 'package:cupertino_ui/cupertino_ui.dart' show CupertinoNavigationBar;
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
+import 'package:material_ui/material_ui.dart' show AppBar;
 
 import 'extensions.dart';
 import 'parent_widget_finder.dart';

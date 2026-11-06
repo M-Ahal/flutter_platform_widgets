@@ -4,10 +4,10 @@
  * See LICENSE for distribution and usage details.
  */
 
-import 'package:flutter/cupertino.dart' show CupertinoAlertDialog;
-import 'package:flutter/material.dart' show AlertDialog, Material;
+import 'package:cupertino_ui/cupertino_ui.dart' show CupertinoAlertDialog;
 import 'package:flutter/widgets.dart';
 import 'package:flutter_platform_widgets/src/extensions.dart';
+import 'package:material_ui/material_ui.dart' show AlertDialog, Material;
 
 import 'platform.dart';
 import 'platform_provider.dart';

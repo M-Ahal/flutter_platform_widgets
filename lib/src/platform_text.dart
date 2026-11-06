@@ -6,8 +6,8 @@
 
 import 'dart:ui' as ui show TextHeightBehavior;
 
-import 'package:flutter/material.dart' show Theme;
 import 'package:flutter/widgets.dart';
+import 'package:material_ui/material_ui.dart' show Theme;
 
 import 'platform.dart' show isMaterial;
 import 'platform_provider.dart' show PlatformProvider;

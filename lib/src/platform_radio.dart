@@ -4,10 +4,10 @@
  * See LICENSE for distribution and usage details.
  */
 
-import 'package:flutter/cupertino.dart' show CupertinoRadio;
-import 'package:flutter/material.dart'
-    show Radio, MaterialTapTargetSize, VisualDensity;
+import 'package:cupertino_ui/cupertino_ui.dart' show CupertinoRadio;
 import 'package:flutter/widgets.dart';
+import 'package:material_ui/material_ui.dart'
+    show MaterialTapTargetSize, Radio, VisualDensity;
 
 import 'platform.dart';
 import 'widget_base.dart';
